@@ -3,96 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>O Ladrão de Raios | Rick Riordan</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #f2f2f2;
-      color: #111;
-    }
-
-    header {
-      background-color: #111;
-      padding: 20px;
-      color: #f4c542;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    nav a {
-      color: #f4c542;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-
-
-    .serie {
-      padding: 20px 80px;
-      font-weight: bold;
-      color: #111;
-      background-color: #f4c542;
-      font-size: 18px;
-    }
-
-    .livro-detalhe {
-      display: flex;
-      padding: 40px;
-      gap: 40px;
-      flex-wrap: wrap;
-      background-color: #f2f2f2;
-    }
-
-    .livro-detalhe img {
-      width: 250px;
-    }
-
-    .texto {
-      max-width: 600px;
-    }
-
-    .texto h3 {
-      text-transform: uppercase;
-      font-size: 14px;
-      color: #666;
-    }
-
-    .texto h1 {
-      font-size: 32px;
-      margin: 10px 0;
-    }
-
-    .texto p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .info {
-      font-size: 14px;
-      margin-top: 10px;
-      color: #333;
-    }
-
-    .citacao {
-      margin-top: 30px;
-      font-style: italic;
-      font-size: 18px;
-      color: #555;
-    }
-
-    .autor {
-      text-align: right;
-      font-weight: bold;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="cabecalho.css">
+  <link rel="stylesheet" href="livro.css">
 </head>
 <body>
 
   <header>
     <div class="logo">RICK RIORDAN</div>
     <nav>
-      <a href="index.html">Livros</a>
+      <a href="#">Livros</a>
       <a href="#">Sobre</a>
       <a href="#">Notícias</a>
       <a href="#">Professores e Pais</a>
@@ -100,28 +19,42 @@
     </nav>
   </header>
 
+  <!-- info sobre a série que esse livro faz parte -->
   <div class="serie">Série: Percy Jackson e os Olimpianos</div>
 
-  <div class="livro-detalhe">
+  <!-- conteúdo principal da página com a imagem e os textos -->
+  <main class="livro-detalhe">
+    <!-- imagem da capa do livro -->
     <img src="ladrao-de-raios.png" alt="Capa do livro O Ladrão de Raios">
+
     <div class="texto">
-      <h3>Livro 1</h3>
-      <h1>O Ladrão de Raios</h1>
+      <h3>LIVRO 1</h3> <!-- subtítulo indicando que é o primeiro da série -->
+      <h1>O Ladrão de Raios</h1> <!-- título principal do livro -->
       <p>
-        Percy Jackson, de doze anos, embarca na jornada mais perigosa de sua vida. Com a ajuda de um sátiro e da filha de Atena, Percy precisa atravessar os Estados Unidos para capturar um ladrão que roubou a arma original de destruição em massa — o raio-mestre de Zeus. Ao longo do caminho, ele precisa enfrentar uma série de inimigos mitológicos determinados a detê-lo. Acima de tudo, ele precisa se reconciliar com um pai que nunca conheceu e com um Oráculo que o alertou sobre a traição de um amigo.
+        Percy Jackson, de doze anos, embarca na jornada mais perigosa de sua vida. Com a ajuda de um sátiro e da filha de Atena, Percy precisa atravessar os Estados Unidos para capturar um ladrão que roubou a arma original de destruição em massa — o raio-mestre de Zeus.
       </p>
+      <p>
+        Ao longo do caminho, ele precisa enfrentar uma série de inimigos mitológicos determinados a detê-lo. Acima de tudo, ele precisa se reconciliar com um pai que nunca conheceu e com um Oráculo que o alertou sobre a traição de um amigo.
+      </p>
+ 
+      <!-- info sobre a editora, isbn e faixa etária -->
       <div class="info">
         Disney Hyperion · 0-7868-5629-7 · A partir de 10 anos
       </div>
+
+      <!-- citação marcante do livro com o autor -->
       <div class="citacao">
         “O mar não gosta de ser contido.”
         <div class="autor">– Rick Riordan</div>
       </div>
     </div>
-  </div>
+  </main>
 
 </body>
 </html>
 
 
+
+      <!-- EU FIZ COMENTARIOS NAS ABAS DO LIVRO SOMENTE NESSA PÁGINA, POIS AS OUTRAS SEGUEM
+        A MESMA LOGICA E SERIA DESNECESSARIO E DISPERDICO DE TEMPO -->
 
