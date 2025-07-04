@@ -1,0 +1,34 @@
+/* Estilo geral do corpo da página */
+body {
+  margin: 0; /* Remove margens padrão do navegador */
+  font-family: Georgia, serif; /* Define a fonte principal */
+  background-color: #f2f2f2; /* Cor de fundo clara e suave */
+  color: #111; /* Cor do texto: quase preto */
+}
+
+/* Estilo do cabeçalho da página */
+header {
+  background-color: #111; /* Fundo preto quase total */
+  padding: 20px 40px; /* Espaçamento interno: 20px em cima/baixo e 40px nas laterais */
+  color: #f4c542; /* Cor do texto: amarelo dourado */
+  display: flex; /* Usa flexbox para layout flexível */
+  justify-content: space-between; /* Espaça itens (logo e nav) nas extremidades */
+  align-items: center; /* Alinha verticalmente ao centro */
+}
+
+/* Estilo para o logo dentro do cabeçalho */
+/* ATENÇÃO: Está sem ponto ou # para selecionar a classe ou id */
+/* Corrija para .logo ou #logo para funcionar */
+.logo {
+  font-size: 24px; /* Tamanho da fonte do logo */
+  color: #f4c542; /* Cor amarelo dourado */
+  font-weight: bold; /* Negrito */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+}
+
+/* Estilo para os links do menu de navegação */
+nav a {
+  color: #f4c542; /* Cor dos links: amarelo dourado */
+  margin: 0 10px; /* Espaçamento horizontal entre links */
+  text-decoration: none; /* Remove sublinhado padrão dos links */
+}
