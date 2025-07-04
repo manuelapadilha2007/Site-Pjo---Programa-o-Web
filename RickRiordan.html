@@ -2,91 +2,86 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Percy Jackson and the Olympians | Rick Riordan</title>
+  <title>Percy Jackson and the Olympians | Rick Riordan</title> <!-- título que aparece na aba do navegador -->
+  <link rel="stylesheet" href="cabecalho.css"> <!-- aqui eu puxei o CSS com o estilo do cabeçalho -->
+  <link rel="stylesheet" href="livro.css"> <!-- esse aqui é o CSS com o estilo da parte dos livros -->
   <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #111;
-      color: #fff;
-    }
-
-    header {
-      background-color: #1a1a1a;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      font-size: 24px;
-      color: #f4c542;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-
-    nav a {
-      color: #f4c542;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
 
     .livro {
-      background-color: #f2f2f2;
-      color: #111;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 20px;
-      gap: 40px;
-      flex-wrap: wrap;
+      background-color: #f2f2f2; /* fundo cinza clarinho */
+      color: #111; /* texto preto */
+      display: flex; /* usando flexbox pra alinhar as coisas */
+      align-items: center; 
+      justify-content: center; 
+      padding: 40px 20px; /* espaçamento interno */
+      gap: 40px; /* espaço entre a imagem e o texto */
+      flex-wrap: wrap; /* se a tela for pequena, quebra pra outra linha */
     }
 
     .livro img {
-      width: 200px;
-      height: auto;
+      width: 200px; /* largura fixa da imagem  */
+      height: auto; /* altura proporcional à imagem original  */
     }
 
     .livro-texto {
-      max-width: 600px;
+      max-width: 600px; /* limite da largura do texto  */
     }
 
     .livro-texto h2 {
-      font-size: 32px;
+      font-size: 32px; /* tamanho maior pro título  */
       margin-bottom: 10px;
     }
 
     .livro-texto h3 {
-      font-size: 16px;
-      font-weight: normal;
-      text-transform: uppercase;
-      color: #555;
+      font-size: 16px; /* subtítulo menor  */
+      font-weight: normal; 
+      text-transform: uppercase; /* coloca tudo em maiúsculo  */
+      color: #555; /* cinza */
     }
 
     .livro-texto p {
-      font-size: 16px;
-      line-height: 1.6;
+      font-size: 16px; 
+      line-height: 1.6; /* espaço entre as linhas */
     }
 
     .livro-texto .botao {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #00c3c9;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 4px;
+      display: inline-block; 
+      margin-top: 20px; 
+      background-color: #00c3c9; /* cor de fundo do botão  */
+      color: #fff; /* texto branco  */
+      padding: 10px 20px; 
+      text-decoration: none; 
+      font-weight: bold; 
+      border-radius: 4px; /* cantos arredondados  */
     }
+	
+	
+	.banner {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
 
-   
-   
+  .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* faz a imagem cobrir tudo sem distorcer  */
+    display: block;
+  }
+
+  .banner .esquerda, .banner .direita {
+    width: 50%; /* cada lado ocupa metade da tela  */
+    height: 250px; /* altura do banner */
+    overflow: hidden; /* esconde o que passar do tamanho definido  */
+  }
   </style>
+  
+  
+  
 </head>
 <body>
 
+   <!-- cabeçalho com o nome do autor e os links de navegação -->
   <header>
     <div class="logo">RICK RIORDAN</div>
     <nav>
@@ -97,11 +92,17 @@
       <a href="#">Mitomagia</a>
     </nav>
   </header>
-
+   
+  
   <div class="banner">
+  <div class="esquerda">
     <img src="banner-percy.png" alt="Banner Percy">
+  </div>
+  <div class="direita">
     <img src="banner-jackson.png" alt="Banner Jackson">
   </div>
+</div>
+
 
   <!-- LADRÃO DE RAIOS -->
   <section class="livro">
@@ -169,7 +170,7 @@
        Ao longo da jornada, Percy enfrentará inimigos poderosos, descobrirá a verdade sobre o deus perdido Pã e ​​enfrentará o segredo mais terrível do senhor titã Cronos. A guerra final começa... com a Batalha do Labirinto.
 	  </p>
       <a class="botao" href="BatalhaLabirinto.html">Ver página do livro</a>
-	  <a class="botao" href="MapaAcamp.html">Mapa do Acampamento Meio-Sangue</a>
+	  <a class="botao" href="SinaisMeioSangue.html">Dez sinais de que você pode ser um meio-sangue</a>
 
     </div>
   </section>
@@ -179,7 +180,7 @@
     <img src="o-ultimo-olimpiano.png" alt="Capa do livro O Ultimo Olimpiano">
     <div class="livro-texto">
       <h3>Livro 5</h3>
-      <h2>A Batalha do Labirinto</h2>
+      <h2>O Ultimo Olimpiano</h2>
       <p>
       Durante todo o ano, os meio-sangues se prepararam para a batalha contra os Titãs, sabendo que as chances de vitória eram mínimas. O exército de Cronos está mais forte do que nunca, e a cada deus e meio-sangue que ele recruta, o poder do Titã maligno só aumenta.
       <br>
@@ -227,3 +228,8 @@
 
 </body>
 </html>
+
+
+
+
+

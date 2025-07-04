@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dez sinais de que você pode ser um meio-sangue | Rick Riordan</title>
+  <link rel="stylesheet" href="cabecalho.css">
+  <style>
+        /* estilo geral do corpo da página */
+    body {
+      background-color: #f2f2f2; /* fundo clarinho cinza */
+      color: #111; /* texto quase preto */
+      font-family: Georgia, serif; /* fonte serifada, clássica */
+      margin: 0; /* tira a margem padrão do navegador */
+    }
+
+    /* container que limita a largura do conteúdo e dá um espaçamento nas laterais */
+    .conteudo {
+      max-width: 900px; /* conteúdo não fica muito largo */
+      padding: 40px 80px; /* espaço interno nas laterais e topo/baixo */
+    }
+
+    /* estilo do título principal */
+    .conteudo h1 {
+      font-size: 28px; /* tamanho um pouco grande pro título */
+      margin-bottom: 20px; /* espaço abaixo do título */
+    }
+
+    /* parágrafos dentro do conteúdo */
+    .conteudo p {
+      font-size: 17px; /* tamanho confortável pra leitura */
+      line-height: 1.6; /* espaçamento entre linhas pra facilitar leitura */
+      margin-bottom: 20px; /* espaço entre os parágrafos */
+    }
+
+    /* estilo do formulário (perguntas do teste) */
+    form {
+      font-size: 16px; /* tamanho da fonte das perguntas */
+      line-height: 1.8; /* espaçamento maior entre linhas */
+      margin-top: 20px; /* espaço acima do formulário */
+    }
+
+    /* título de cada pergunta em negrito, separado com espaço em cima e embaixo */
+    form strong {
+      display: block; /* faz com que cada pergunta fique em linha separada */
+      margin-bottom: 8px; /* espaço entre a pergunta e as opções */
+      margin-top: 20px; /* espaço entre uma pergunta e outra */
+    }
+
+    /* resultado do teste, com cor diferente para destacar */
+    #resultado {
+      margin-top: 40px; /* espaço acima do resultado */
+      color: #0a2f66; /* cor azul escura pra destacar */
+      font-size: 16px; /* tamanho confortável pra leitura */
+      line-height: 1.6; /* espaçamento entre linhas */
+    }
+
+    /* negrito dentro do resultado pra destacar partes importantes */
+    #resultado strong {
+      font-weight: bold; /* deixa o texto mais grosso */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho padrão -->
+  <header>
+    <div class="logo">RICK RIORDAN</div>
+    <nav>
+      <a href="index.html">Livros</a>
+      <a href="#">Sobre</a>
+      <a href="#">Notícias</a>
+      <a href="#">Professores e Pais</a>
+      <a href="#">Mitomagia</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <div class="conteudo">
+    <h1>⚔️ Dez sinais de que você pode ser um meio-sangue ⚔️</h1> <!-- título da página -->
+	<!-- explicação sobre o teste, só por diversão -->
+    <p>O teste a seguir é apresentado apenas para fins de entretenimento. Não há nenhuma verdade nisso. Honestamente. Lembre-se de quantas vezes você respondeu <strong>"SIM"</strong>. Ao final do teste, você poderá pontuar seus resultados.</p>
+     <br>
+	 
+    <form>
+	<!-- cada pergunta em negrito, com as opções sim ou não -->
+      <strong>1. Você tem dislexia, mas lê textos em grego antigo como se fosse sua língua nativa.</strong>
+      <input type="radio" name="q1"> sim
+      <input type="radio" name="q1"> não
+
+      <strong>2. Você se mete em confusão sem nem tentar.</strong>
+      <input type="radio" name="q2"> sim
+      <input type="radio" name="q2"> não
+
+      <strong>3. Um simples passeio vira uma missão perigosa.</strong>
+      <input type="radio" name="q3"> sim
+      <input type="radio" name="q3"> não
+
+      <strong>4. Você tem um talento estranho que ninguém mais entende.</strong>
+      <input type="radio" name="q4"> sim
+      <input type="radio" name="q4"> não
+
+      <strong>5. Pessoas “normais” te chamam de distraído, mas você sente quando algo está errado.</strong>
+      <input type="radio" name="q5"> sim
+      <input type="radio" name="q5"> não
+
+      <strong>6. Relâmpagos, terremotos ou tempestades costumam acontecer quando você está muito bravo.</strong>
+      <input type="radio" name="q6"> sim
+      <input type="radio" name="q6"> não
+
+      <strong>7. Armas aparecem em objetos comuns.</strong>
+      <input type="radio" name="q7"> sim
+      <input type="radio" name="q7"> não
+
+      <strong>8. Você nunca se sentiu 100% encaixado no mundo mortal.</strong>
+      <input type="radio" name="q8"> sim
+      <input type="radio" name="q8"> não
+
+      <strong>9. Já viu criaturas que mais ninguém viu.</strong>
+      <input type="radio" name="q9"> sim
+      <input type="radio" name="q9"> não
+
+      <strong>10. Você recebeu um convite estranho para um tal de “Acampamento Meio-Sangue”.</strong>
+      <input type="radio" name="q10"> sim
+      <input type="radio" name="q10"> não
+    </form>
+
+    <!-- resultado do teste, explicando o que significa responder sim em cada faixa -->
+    <div id="resultado">
+      <p><strong>Se você respondeu SIM a 8 ou mais perguntas:</strong><br>
+      Você provavelmente é meio-sangue. Cuidado! Procure ajuda até seu décimo segundo aniversário.</p>
+
+      <p><strong>Se você respondeu SIM para 5 a 7 perguntas:</strong><br>
+      Seu nível de risco é limítrofe. Você pode ter algum sangue olímpico em sua ancestralidade. Também é possível que você seja descendente de um deus ou deusa menor.</p>
+
+      <p><strong>Se você respondeu SIM a 3-4 perguntas:</strong><br>
+      É improvável que você seja um meio-sangue. Talvez só tenha uma boa imaginação.</p>
+
+      <p><strong>Se você respondeu SIM para 0-2 perguntas:</strong><br>
+      Você é 100% mortal. Relaxe, você está seguro.</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
