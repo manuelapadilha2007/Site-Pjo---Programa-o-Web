@@ -3,55 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <title>Ficha Campista Acampamento Meio-Sangue | Rick Riordan</title>
+  <link rel="stylesheet" href="cabecalho.css">
   <style>
+/* Estilo geral da página */
     body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #f2f2f2;
-      color: #111;
+      margin: 0; /* Remove margens padrão do navegador */
+      font-family: 'Georgia', serif; /* Fonte elegante, serifada */
+      background-color: #f2f2f2; /* Cor de fundo clara */
+      color: #111; /* Cor do texto: quase preto */
     }
 
-    header {
-      background-color: #111;
-      padding: 20px;
-      color: #f4c542;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    /* Container principal do texto e formulário */
+    .texto {
+      padding: 40px 80px; /* Espaçamento interno: 40px em cima/baixo e 80px nas laterais */
     }
 
-    nav a {
-      color: #f4c542;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-
-
-    .serie {
-      padding: 20px 80px;
-      font-weight: bold;
-      color: #111;
-      background-color: #f4c542;
-      font-size: 18px;
-    }
-
-
+    /* Estilização do título principal */
     .texto h1 {
-      font-size: 32px;
-      margin: 10px 0;
-    }
-	
-	.texto form {
-      font-size: 17px;
-      line-height: 1.6;
-	  margin: 15px;
+      font-size: 32px; /* Tamanho grande para destaque */
+      margin: 10px 0 30px 0; /* Margem: 10px acima, 0 direita, 30px abaixo, 0 esquerda */
+      text-align: center; /* Centraliza o texto */
     }
 
+    /* Estilo do formulário */
+    form {
+      font-size: 17px; /* Tamanho de fonte confortável para leitura */
+      line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+      max-width: 700px; /* Largura máxima para limitar o tamanho em telas grandes */
+      margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    }
+
+    /* Estilo para os rótulos (labels) dos campos */
+    label {
+      font-weight: bold; /* Negrito para destaque */
+      display: block; /* Cada label ocupa linha inteira */
+      margin: 20px 0 5px; /* Espaçamento acima e abaixo para separar dos outros elementos */
+    }
+
+    /* Estilo para os campos de texto */
+    input[type="text"] {
+      width: 100%; /* Ocupa toda largura do container pai */
+      padding: 8px; /* Espaçamento interno para melhor usabilidade */
+      font-family: Georgia, serif; /* Mesma fonte do body */
+      font-size: 16px; /* Fonte um pouco menor que o form, para contraste */
+      border: 1px solid #ccc; /* Borda cinza clara */
+      border-radius: 4px; /* Cantos arredondados */
+      box-sizing: border-box; /* Inclui padding e borda na largura total */
+    }
+
+    /* Estilo para o botão de envio */
+    input[type="submit"] {
+      margin-top: 30px; /* Espaço acima do botão */
+      padding: 10px 20px; /* Espaçamento interno para tamanho adequado */
+      background-color: #f4c542; /* Cor de fundo amarela vibrante */
+      color: #111; /* Cor do texto: quase preto */
+      border: none; /* Remove borda padrão */
+      border-radius: 4px; /* Cantos arredondados */
+      font-weight: bold; /* Texto em negrito */
+      cursor: pointer; /* Cursor muda para indicar clique */
+      transition: background-color 0.3s ease; /* Transição suave para o hover */
+    }
+
+    /* Efeito ao passar o mouse sobre o botão */
+    input[type="submit"]:hover {
+      background-color: #e0b835; /* Amarelo um pouco mais escuro no hover */
+    }
   </style>
 </head>
-
-
-  <body>
+<body>
 
   <header>
     <div class="logo">RICK RIORDAN</div>
@@ -64,43 +83,27 @@
     </nav>
   </header>
 
-    
-	<div class="form">
-    <div class="texto">
-      <h1>Meu primeiro formulário</h1>
-	  <form>
-	<label>Nome mortal e nome de campista</label>
-	<input type="text"><br>
-	<br>
-	
-	<label>Idade</label>
-	<input type="text"><br>
-	<br>
-	
-	<label>Filiação divina</label>
-	<input type="text"><br>
-	<br>
-	
-	<label>Habilidades especiais</label>
-	<input type="text"><br>
-	<br>
-	
-	<label>Primeira missão</label>
-	<input type="text"><br>
-	<br>
-	
-	
-	<input type="submit">
-	</form>
-    </div>
-	    </div>
+  <div class="texto">
+    <h1>🛡️ Ficha Campista</h1>
+    <form>
+      <label>Nome mortal e nome de campista</label>
+      <input type="text">
 
+      <label>Idade</label>
+      <input type="text">
 
+      <label>Filiação divina</label>
+      <input type="text">
 
- 
+      <label>Habilidades especiais</label>
+      <input type="text">
 
+      <label>Primeira missão</label>
+      <input type="text">
 
-
+      <input type="submit" value="Enviar Ficha">
+    </form>
+  </div>
 
 </body>
 </html>
