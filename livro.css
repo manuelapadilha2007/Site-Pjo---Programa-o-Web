@@ -1,0 +1,74 @@
+/* Faixa amarela com o nome da série */
+.serie {
+  background-color: #f4c542; /* Fundo amarelo dourado */
+  color: #111; /* Texto quase preto */
+  font-weight: bold; /* Texto em negrito */
+  font-size: 18px; /* Tamanho da fonte */
+  padding: 20px 80px; /* Espaçamento interno vertical (20px) e horizontal (80px) */
+  font-family: Georgia, serif; /* Fonte serifada elegante */
+  margin-bottom: 30px; /* Espaço abaixo da faixa para separar dos próximos elementos */
+}
+
+/* Container do conteúdo do livro, organizando imagem e texto lado a lado */
+.livro-detalhe {
+  display: flex; /* Usando Flexbox para layout flexível horizontal */
+  align-items: flex-start; /* Alinha os itens no topo */
+  padding: 40px; /* Espaço interno em todos os lados */
+  gap: 40px; /* Espaçamento entre os itens filhos */
+  flex-wrap: wrap; /* Permite quebra para múltiplas linhas em telas pequenas */
+  background-color: #f2f2f2; /* Fundo claro */
+}
+
+/* Capa do livro, imagem com largura fixa */
+.livro-detalhe img {
+  width: 250px; /* Largura fixa para manter proporção */
+}
+
+/* Caixa de texto com largura máxima para facilitar leitura */
+.texto {
+  max-width: 700px; /* Limita a largura para que o texto não fique muito esticado */
+}
+
+/* Subtítulo em caixa alta, menor e em tom cinza */
+.texto h3 {
+  text-transform: uppercase; /* Deixa texto todo em maiúsculas */
+  font-size: 14px; /* Pequeno */
+  color: #666; /* Cinza médio */
+  margin: 0; /* Remove margens para evitar espaçamentos extras */
+}
+
+/* Título principal do texto, grande e com margem */
+.texto h1 {
+  font-size: 32px; /* Fonte grande para destaque */
+  margin: 10px 0; /* Margem acima e abaixo para separar do conteúdo */
+}
+
+/* Parágrafos com fonte confortável para leitura */
+.texto p {
+  font-size: 16px; /* Tamanho padrão de texto */
+  line-height: 1.6; /* Espaçamento entre linhas para facilitar leitura */
+  margin: 10px 0; /* Espaço acima e abaixo */
+}
+
+/* Informações complementares, menor e em cinza escuro */
+.info {
+  font-size: 14px; /* Texto menor */
+  color: #333; /* Cinza escuro */
+  margin-top: 10px; /* Espaço acima */
+}
+
+/* Citação estilizada em itálico e com cor cinza */
+.citacao {
+  font-style: italic; /* Itálico para destacar citação */
+  font-size: 18px; /* Um pouco maior que o texto comum */
+  color: #555; /* Cinza intermediário */
+  margin-top: 30px; /* Espaço maior acima para destacar da seção anterior */
+}
+
+/* Nome do autor alinhado à direita e em negrito */
+.autor {
+  text-align: right; /* Alinha texto à direita */
+  font-weight: bold; /* Negrito */
+  font-size: 14px; /* Tamanho menor */
+  color: #555; /* Cinza intermediário */
+}
