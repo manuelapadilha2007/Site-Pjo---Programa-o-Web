@@ -2,77 +2,75 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>O Ladrão de Raios | Rick Riordan</title>
+  <title>Referência à Odisseia de Homero + EPIC - The Musical | Rick Riordan</title>
+  <link rel="stylesheet" href="cabecalho.css">
   <style>
+  
+     /* estilo geral do corpo da página: cor de fundo clara, texto escuro, e uma fonte tipo livro */
     body {
-      margin: 0;
-      font-family: 'Georgia', serif;
       background-color: #f2f2f2;
       color: #111;
+      font-family: Georgia, serif;
+      margin: 0;  /* tira o espaçamento padrão das bordas da página */
     }
 
-    header {
-      background-color: #111;
-      padding: 20px;
-      color: #f4c542;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    nav a {
-      color: #f4c542;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-
-
-    .serie {
-      padding: 20px 80px;
-      font-weight: bold;
-      color: #111;
-      background-color: #f4c542;
-      font-size: 18px;
-    }
-
-    .livro-detalhe {
-      display: flex;
-      padding: 40px;
-      gap: 40px;
+     /* bloco que junta imagem + texto lado a lado*/
+    .bloco {
+      display: flex;  /* coloca os filhos um do lado do outro (flexbox) */
       flex-wrap: wrap;
-      background-color: #f2f2f2;
+      gap: 40px; /* espaçamento entre a imagem e o texto */
+      padding: 40px 80px; /* espaço interno em cima/baixo e dos lados */
+      background-color: #f2f2f2; /* só por garantia, mesma cor do body */
+      align-items: flex-start; /* alinha tudo pelo topo do conteúdo */
     }
 
+     /* define o tamanho padrão das imagens dentro dos blocos */
+    .bloco img {
+      width: 300px;
+      height: auto; /* mantém proporção da imagem certinha */
+    }
 
+     /* configurações de layout pro texto ao lado da imagem */
     .texto {
-      max-width: 750px;
+      max-width: 750px; /* limita a largura do texto pra não ficar muito espalhado */
     }
 
+    /* estilo pro título de cada seção (h1) */
     .texto h1 {
-      font-size: 32px;
-      margin: 10px 0;
+      font-size: 28px;
+      margin-bottom: 20px; /* espaço entre o título e o parágrafo abaixo */
     }
 
+     /* estilo padrão pros parágrafos do conteúdo */
     .texto p {
       font-size: 17px;
-      line-height: 1.6;
+      line-height: 1.6; /* aumenta o espaçamento entre linhas pra leitura ficar melhor */
+      margin-bottom: 20px;
     }
-	
-	.texto li {
+
+    /* configura a indentação das listas (tipo marcadores) */
+    .texto ul {
+      padding-left: 20px; /* desloca um pouco pra direita */
+      margin-bottom: 20px;
+    }
+
+    /* estilo dos itens da lista */
+    .texto li {
       font-size: 17px;
       line-height: 1.6;
-    }
-	
-	.livro-detalhe img {
-      width: 300px;
-	  height: 350px;
+      margin-bottom: 10px;
     }
 
-
+     /* linha separadora entre as duas seções */
+    .separador {
+      border-top: 1px solid #ccc; /* cria uma linha cinza bem suave */
+      margin: 40px 80px; /* espaço em cima e dos lados da linha */
+    }
   </style>
 </head>
 <body>
 
+  <!-- Cabeçalho -->
   <header>
     <div class="logo">RICK RIORDAN</div>
     <nav>
@@ -84,59 +82,47 @@
     </nav>
   </header>
 
-  <div class="serie">Série: Percy Jackson e os Olimpianos</div>
 
-  <!-- DESCRIÇÃO DE A ODISSEIA -->
-  <div class="livro-detalhe">
+  <!-- Seção 1 -->
+  <div class="bloco">
     <img src="Odisseia.png" alt="Capa do livro A Odisseia - Homero">
     <div class="texto">
       <h1>🌊 O Mar de Monstros – Quando Percy encontra Odisseu</h1>
-      <p>Você já parou pra pensar que O Mar de Monstros é praticamente uma recontagem moderna da Odisseia, o épico escrito há quase 3 mil anos por Homero? Pois é. Rick Riordan não só sabe contar uma boa história, como também se inspira nas mais clássicas. E esse segundo livro da saga Percy Jackson e os Olimpianos é uma carta de amor (e zoeira) à mitologia grega.
-<br> Se você curte mitologia ou está estudando para a escola, segura essa: A Odisseia narra a jornada de Odisseu, o rei de Ítaca, tentando voltar pra casa depois da Guerra de Troia. Parece simples? Pois ele leva dez anos pra fazer isso, enfrentando de tudo: monstros marinhos, feiticeiras, cantos de sereias, gigantes canibais, deuses vingativos e até tempestades causadas por Poseidon. Sim, o mesmo Poseidon que é pai do Percy. Coincidência? Nem um pouco.
-<br> Rick Riordan pega tudo isso e traduz para o universo moderno:
-      </p>
- 
-        <ul>
-        <li>Quando Percy, Annabeth e Tyson navegam rumo ao Mar de Monstros, eles estão literalmente percorrendo o mesmo caminho mitológico que Odisseu fez. O que na antiguidade era o mar Mediterrâneo, agora é uma parte “camuflada” do Triângulo das Bermudas — uma área mítica onde as leis da física e da realidade dão uma pausa.</li>
-        <li>As criaturas Cila e Caríbdis, que devoram navios, aparecem aqui como monstros gigantescos, um no céu e outro no fundo do mar. Exatamente como Homero descreveu — mas desta vez enfrentando um barco mágico dirigido por uma filha de Ares (alô, Clarisse!).</li>
-		<li>A ilha do spa mágico, onde os heróis quase esquecem de sua missão, é um paralelo à ilha da feiticeira Circe, que transformava os marinheiros de Odisseu em porcos. Riordan recria isso com humor e crítica moderna: os semideuses são seduzidos por uma falsa sensação de segurança, como quem entra num hotel all inclusive e nunca mais quer sair.</li>
-		<li>Até o velocino de ouro tem raiz nos mitos antigos: ele vem do mito de Jasão e os Argonautas, outro épico grego. No livro, Percy busca o velocino para curar a árvore de Thalia — um símbolo de proteção do acampamento — enquanto, no mito original, o velocino representava realeza e poder.
-    </li>
-    </ul>
-	
-	<p>E tudo isso sem perder a leveza, a ironia e o coração que são marca registrada do Percy. Ao invés de um herói sisudo, temos um adolescente sarcástico, com déficit de atenção, que ama os amigos e só queria passar o verão de boas. Mas aí vem monstros. Sempre vêm. </p>
+      <p>Você já parou pra pensar que <strong>O Mar de Monstros</strong> é praticamente uma recontagem moderna da <strong>Odisseia</strong>, o épico escrito há quase 3 mil anos por Homero? Pois é. Rick Riordan não só sabe contar uma boa história, como também se inspira nas mais clássicas.</p>
 
-    <br>
-	<p>_____________________________________________________________</p>
+      <p>A Odisseia narra a jornada de Odisseu tentando voltar pra casa após a Guerra de Troia. Mas ele leva dez anos enfrentando monstros, sereias, feiticeiras e a fúria de Poseidon — o mesmo que é pai de Percy!</p>
 
-      
+      <ul>
+        <li>A jornada de Percy pelo Mar de Monstros é o mesmo caminho mitológico de Odisseu, agora camuflado no Triângulo das Bermudas.</li>
+        <li>As criaturas Cila e Caríbdis aparecem como monstros gigantes devoradores de navios, assim como na obra original.</li>
+        <li>A ilha do spa mágico recria a ilha de Circe, com crítica à alienação e ao conforto ilusório.</li>
+        <li>O Velocino de Ouro vem diretamente da mitologia de Jasão e os Argonautas.</li>
+      </ul>
+
+      <p>Ao invés de um herói sisudo, temos um adolescente sarcástico, com déficit de atenção e coração gigante. Percy é uma versão moderna do herói trágico, mas com humor e lealdade.</p>
     </div>
   </div>
-  
-  <!-- DESCRIÇÃO DE EPIC -->
-  <div class="livro-detalhe">
+
+  <!-- Separador -->
+  <div class="separador"></div>
+
+  <!-- Seção 2 -->
+  <div class="bloco">
     <img src="epic.png" alt="Poster de EPIC - The Musical">
     <div class="texto">
-      <h1>🌊 🎭 Epic: The Musical – A Odisseia cantada com alma</h1>
-      <p>Agora, se você quer sentir toda a intensidade e tragédia por trás desses mitos (com uma trilha sonora de arrepiar) precisa conhecer Epic: The Musical. Sério.
-         <br>
-Criado por Jorge Rivera-Herrans, Epic é um projeto musical que transforma A Odisseia numa narrativa cantada moderna. Mas não é só uma adaptação: é uma releitura emocional, poética e profunda, contada sob a perspectiva de um herói quebrado que tenta manter o próprio senso de humanidade enquanto o mundo à sua volta desmorona.
-         <br>
-		 Enquanto O Mar de Monstros te dá a adrenalina da aventura, Epic mergulha na vulnerabilidade do herói. A música "Even If I Die", por exemplo, mostra Odisseu lutando com a culpa de ter perdido seus homens, enquanto carrega o peso de todas as vidas que lidera. Já em "Survive", ele canta sobre como às vezes sobreviver não parece suficiente — uma emoção que Percy também sente, mesmo que esconda atrás das piadas.
-		 <br> Os paralelos são muitos:
-      </p>
-	  
-	  <ul>
-        <li>Percy e Odisseu são líderes relutantes. Carregam a culpa, o medo de falhar, o peso das decisões.</li>
-        <li>Ambos enfrentam monstros, mas os piores estão dentro deles: traumas, dúvidas, perdas.</li>
-		<li>Ambos são heróis solitários, mesmo cercados de aliados.</li>
-	</li>
-    </ul>
-	
-	<p>E Epic dá voz a isso tudo — com músicas que viralizaram no TikTok, mas que também estão conquistando playlists de fãs de teatro musical, literatura e mitologia.
-     <br> Se você está lendo O Mar de Monstros, ou relendo, ou só mergulhando nesse mundo mitológico pela primeira vez, aqui vai um desafio: leia alguns capítulos do livro e depois escute a música "Full Speed Ahead". Pense no Percy lutando com monstros, navegando em direção ao desconhecido, tentando proteger quem ama — e veja como os mundos se conectam.
-    </p>
-      
+      <h1>🎭 Epic: The Musical – A Odisseia cantada com alma</h1>
+      <p><strong>Epic: The Musical</strong>, criado por Jorge Rivera-Herrans, transforma A Odisseia em uma narrativa cantada moderna e emocional. É contado sob o ponto de vista de um herói quebrado, tentando manter sua humanidade enquanto tudo ao redor desaba.</p>
+
+      <p>Enquanto O Mar de Monstros foca na aventura, <em>Epic</em> mergulha na dor e nos dilemas. A música “Even If I Die” mostra Odisseu enfrentando a culpa e a perda de seus homens. Já em “Survive”, ele canta que sobreviver às vezes parece pouco — algo que Percy também sente.</p>
+
+      <ul>
+        <li>Percy e Odisseu são líderes relutantes, carregando culpa e decisões difíceis.</li>
+        <li>Os maiores monstros não estão fora, mas dentro deles: traumas, medo e solidão.</li>
+        <li>Ambos enfrentam jornadas duras tentando proteger os que amam.</li>
+      </ul>
+
+        <!-- STRONG é pra deixar certas partes em negrito -->
+      <p><strong>Dica:</strong> Leia um capítulo de "O Mar de Monstros" e depois ouça “Full Speed Ahead”. Visualize Percy enfrentando monstros e veja como as histórias se conectam.</p>
     </div>
   </div>
 
